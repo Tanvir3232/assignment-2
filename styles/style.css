@@ -1,0 +1,85 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* common styles */
+.primary-color {
+    color: #727272;
+}
+
+.secondary-color {
+    color: #131313;
+}
+
+.primary-btn {
+    padding: 20px 24px;
+    color: #FFFFFF;
+    background: #FF900E;
+    border-radius: 8px;
+    border: 0px;
+}
+
+/* header styles */
+.header {
+    background: rgba(255, 144, 14, 0.1);
+    padding: 50px 200px 45px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-name {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.links {
+    display: flex;
+    gap: 15px
+}
+
+.links li {
+    list-style: none;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #727272;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* banner styles */
+.banner {
+    text-align: center;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 64px;
+    margin-top: 32px;
+    padding: 5px 150px;
+}
+
+.banner-description {
+    padding: 32px 50px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.banner-thumbnail {
+    margin-top: 50px;
+    width: 100%
+}
+
+.banner-thumbnail img {
+    width: 100%;
+}
