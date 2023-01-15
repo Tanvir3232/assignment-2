@@ -24,7 +24,7 @@
     border: 0px;
 }
 .container{
-    margin: 0px 200px;
+    margin: 100px 200px;
 }
 /* header styles */
 .header {
@@ -88,7 +88,6 @@
 
 /* feature section styles */
 .features{
-    margin-top: 85px;
     display: flex;
     align-items: center;
     gap: 70px;
@@ -118,4 +117,33 @@
     font-size: 14px;
     font-weight: 400;
     margin: 24px 0px 32px;
+}
+
+/* Feature lists section styles */
+.feature-details{
+    display: flex;
+    gap: 54px;
+    justify-content: space-between;
+}
+.featurelists{
+    width:100%;
+}
+.feature-title.bordered{
+    padding-left: 20px;
+    border-left: 3px solid #FF900E;
+}
+.feature{
+    padding-left: 10px;
+}
+.feature-banner{
+    width: 100%;
+}
+.feature-banner img{
+    width: 100%;
+    height: 100%;
+}
+.experience{
+    margin-left: 45%;
+    margin-top: -50px;
+    font-size: 36px;
 }
