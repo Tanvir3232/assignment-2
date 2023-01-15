@@ -143,7 +143,11 @@
 }
 
 .feature {
-    padding-left: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 10px;
+
 }
 
 .feature-banner {
@@ -176,7 +180,14 @@
     text-align: center;
     padding: 50px 0px 0px;
 }
-
+.fact:hover{
+    animation: mymove 0.5s;
+ }
+ 
+ @keyframes mymove {
+   from { border: 1px solid #FF900E;}
+   to { border: 3px solid #3977be;}
+ }
 .fact h3 {
     font-size: 45px;
 }
@@ -191,72 +202,129 @@
     align-items: center;
     justify-content: space-between;
 }
-
+/* our services */
+.service-title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.services{
+    display: flex;
+    gap: 24px;
+    text-align: center;
+}
+.service{
+    width: 300px;
+    border: 1px solid saddlebrown;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.service:hover{
+    transform: rotate(8deg);
+}
+.service img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 10px;
+}
+.service p{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+/* footer styles  */
 .footer {
     background: #FFF4E7;
     border-radius: 8px;
     height: 100px;
     text-align: center;
 }
-.footer p{
-   padding: 40px;
+
+.footer p {
+    padding: 40px;
 }
 
-.hide{
-    display: none;
-}
+
 
 /* Media query for responsive */
 @media screen and (max-width: 576px) {
-    .container{
-        margin: 50px 10px;
+    
+    .container {
+        margin: 50px 5%;
+        width: 80%;
     }
+
     .header {
         padding: 50px 0px 45px;
+        margin: 0px;
     }
-    .nav{
-      flex-direction: column;
+
+    .nav,
+    .links {
+        flex-direction: column;
 
     }
-    .features,.feature-details{
+
+    .features,
+    .feature-details {
         flex-direction: column;
-        align-items: flex-start;
+        margin: 0px 3%;
     }
-    
-    .site-name {
-        font-size: 30px;
+    .feature{
+        width: 100%;
+    }
+    .site-name,.feature-title{
+        font-size: 24px;
         margin-bottom: 30px;
     }
+
     .banner-title {
         font-size: 24px;
         margin-top: 50px;
         padding: 5px 10px;
     }
-    
+
     .feature-teams {
         grid-template-columns: repeat(1, 1fr);
-        padding: 5%;
+        padding: 0px 5%;
     }
-    
-    .team ,.feature-banner,.banner-thumbnail{
+   
+    .team,
+    .feature-banner,
+    .banner-thumbnail {
         width: 90%;
         height: 100%;
         padding: 0px 5%;
     }
+    .fact,.service{
+        width: 95%;
+        margin-left: 5%;
+    }
 
-    
+
     .experience {
-        margin-left:25%;
+        margin-left: 20%;
         margin-top: 10px;
         font-size: 24px;
     }
-    .facts,.sponsors-logos{
+
+    .facts,
+    .services,.sponsors-logos {
         flex-direction: column;
-        gap: 30px;
-        align-items: center;
-        margin: 0px;
+        gap: 20px;
+        padding-left: 5%;
+        margin-top: 20px;
+    }
+   
+    .sponsors-logos img{
+        width: 60px;
+    }
+    .footer{
+        height: 100%;
+        width: 80%;
+        margin:10%;
     }
 
-  
-    
+
+
 }
