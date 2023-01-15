@@ -329,7 +329,69 @@
         width: 80%;
         margin:10%;
     }
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+    .container {
+        margin: 50px 5%;
+        width: 80%;
+    }
+
+    .header {
+        padding: 50px 10px 45px;
+        margin: 0px;
+    }
+    
+    .features,
+    .feature-details {
+        flex-direction: column;
+        margin: 0px 5%;
+    }
+    .feature{
+        width: 100%;
+    }
+    .site-name,.feature-title{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .banner-title {
+        font-size: 30px;
+        margin-top: 50px;
+        padding: 5px 10px;
+    }
 
 
+   
+    .team,
+    .feature-banner,
+    .banner-thumbnail {
+        width: 90%;
+        height: 100%;
+        padding: 0px 5%;
+    }
+    .service{
+        width: 450px;
+        height: 450px;
+        margin-left: 5%;
+    }
 
+
+    .experience {
+        margin-left: 30%;
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    .services,.facts{
+        margin-top: 20px;
+        flex-wrap: wrap;
+        
+    }
+    .service img{
+        height: 300px;
+    }
+   
+    .sponsors-logos img{
+        width: 60px;
+    }
+    
 }
