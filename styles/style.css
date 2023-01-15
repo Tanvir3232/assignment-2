@@ -162,11 +162,12 @@
 }
 
 /* some facts section  */
-.facts{
+.facts {
     display: flex;
     margin: 100px 30px;
     gap: 24px;
 }
+
 .fact {
     width: 250px;
     height: 200px;
@@ -175,6 +176,28 @@
     text-align: center;
     padding: 50px 0px 0px;
 }
-.fact h3{
+
+.fact h3 {
     font-size: 45px;
+}
+
+/* our sponsors section styles */
+.sponsors-container {
+    text-align: center;
+}
+
+.sponsors-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer {
+    background: #FFF4E7;
+    border-radius: 8px;
+    height: 100px;
+    text-align: center;
+}
+.footer p{
+   padding: 40px;
 }
